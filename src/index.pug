@@ -14,8 +14,117 @@ html(lang="en")
             include components/header 
             +header 
             main.main 
-                .container 
-                    p main 
-            include components/footer 
-            +footer
+                .products 
+                    .products__body.container 
+                        h1.title Продукты
+                        .products__content 
+                            .product 
+                                .product__img 
+                                    img(src="@img/product-1.png", alt="" draggable="false")
+                                .product__content 
+                                    a(href="#!").product__title Букет «Весна»
+                                    p.product__p Мы с радостью возьмем на себя задачу по созданию букета ...
+                            .product 
+                                .product__img 
+                                    img(src="@img/product-2.png", alt="" draggable="false")
+                                .product__content 
+                                    a(href="#!").product__title Букет «Свадебный»
+                                    p.product__p Мы с радостью возьмем на себя задачу по созданию букета ...
+                            .product 
+                                .product__img 
+                                    img(src="@img/product-3.png", alt="" draggable="false")
+                                .product__content 
+                                    a(href="#!").product__title Букет «Праздничный»
+                                    p.product__p Мы с радостью возьмем на себя задачу по созданию букета ...
+                            .product 
+                                .product__img 
+                                    img(src="@img/product-4.png", alt="" draggable="false")
+                                .product__content 
+                                    a(href="#!").product__title Букет «Вдохновение»
+                                    p.product__p Мы с радостью возьмем на себя задачу по созданию букета ...
+                            .product 
+                                .product__img 
+                                    img(src="@img/product-5.png", alt="" draggable="false")
+                                .product__content 
+                                    a(href="#!").product__title Букет «Весна»
+                                    p.product__p Мы с радостью возьмем на себя задачу по созданию букета ...
+                            .product 
+                                .product__img 
+                                    img(src="@img/product-6.png", alt="" draggable="false")
+                                .product__content 
+                                    a(href="#!").product__title Букет «Маме»
+                                    p.product__p Мы с радостью возьмем на себя задачу по созданию букета ...
+                            .product 
+                                .product__img 
+                                    img(src="@img/product-7.png", alt="" draggable="false")
+                                .product__content 
+                                    a(href="#!").product__title Букет «Свадебный»
+                                    p.product__p Мы с радостью возьмем на себя задачу по созданию букета ...
+                            .product 
+                                .product__img 
+                                    img(src="@img/product-8.png", alt="" draggable="false")
+                                .product__content 
+                                    a(href="#!").product__title Букет «Праздничный»
+                                    p.product__p Мы с радостью возьмем на себя задачу по созданию букета ...
+                .container
+                    p.text Для того чтобы люди радовались жизни, научились видеть красоту и ценили каждое мгновение природа подарила нам цветы. Нежные, ароматные, беззащитные и наполненные легкостью тонких лепестков, цветущие растения смотрят на нас с клумб и оранжерей, дарят положительные эмоции в любую погоду и время года.<br>Цветы – это глаза природы – фиолетовые бархатные фиалки, синие колокольчики, голубые незабудки и маленькие звездочки-ромашки с белыми ресничками поднимают свои головки к солнцу, радуясь теплу и свету. Каждый раз, когда видишь гордые лилии или царственные розы, не можешь не удивляться, насколько совершенными могут быть растения, какие они разные и по-своему прекрасны: яркостью цвета, элегантностью бутонов и чудом распускающихся лепестков.<br>Первые цветы всегда приносят с собой весточку о приближающейся весне. Хрупкие и полупрозрачные подснежники пробиваются из-под снега и наступает оттепель, лес оживает от солнечных лучей, играющих на полянах, в садах и огородах. Затем появляются желтые и голубые крокусы, напоминающие своей формой миниатюрные тюльпаны. Они похожи на самоцветы, рассыпанные по чернеющей земле, между камнями и около старых пней, где, возможно, пережидают зиму ворчливые гномы.
+                .articles 
+                    .articles__body.container 
+                        .articles__header
+                            h2.title.mb-0 Статьи 
+                            a(href="#!").articles__link Смотреть все статьи  
+                        .articles__swiper.swiper
+                            .articles__wrapper.swiper-wrapper
+                                .article.swiper-slide 
+                                    .article__img 
+                                        img(src="@img/product-1.png", alt="" draggable="false")
+                                    .article__content 
+                                        p.article__title Виды пионов
+                                        p.article__p Пион – всеми любимый прекрасный цветок, сортов которого во всем мире насчитывается более 5 тысяч!
+                                        a(href="#!").article__link Подробнее 
+                                .article.swiper-slide 
+                                    .article__img 
+                                        img(src="@img/product-2.png", alt="" draggable="false")
+                                    .article__content 
+                                        p.article__title Цветы в стеклянной колбе
+                                        p.article__p Цветы в стеклянной колбе от компании «Букет Лета» — это совершенно уникальный и новый продукт, которого вы не увидите ни в российских, ни в зарубежных цветочных лавках.
+                                        a(href="#!").article__link Подробнее 
+                                .article.swiper-slide 
+                                    .article__img 
+                                        img(src="@img/product-3.png", alt="" draggable="false")
+                                    .article__content 
+                                        p.article__title Фестиваль пионов в Лояне
+                                        p.article__p Древовидный пион уже на протяжении многих столетий известен в Китае под названием «Король цветов» и является символом города Лоян.
+                                        a(href="#!").article__link Подробнее 
+                                .article.swiper-slide 
+                                    .article__img 
+                                        img(src="@img/product-4.png", alt="" draggable="false")
+                                    .article__content 
+                                        p.article__title Самые красивые летние букеты
+                                        p.article__p Летняя флористика очень разнообразна. Невозможно передать все краски лета в одной композиции. Если зимой, осенью и весной палитра сезонных букетов сосредотачивается в определенных частях цветового круга, то летом она охватывает практически все его оттенки.
+                                        a(href="#!").article__link Подробнее 
+                                .article.swiper-slide 
+                                    .article__img 
+                                        img(src="@img/product-5.png", alt="" draggable="false")
+                                    .article__content 
+                                        p.article__title Пять советов по оформлению торжеств живыми цветами
+                                        p.article__p Там, где есть цветы, всегда чувствуется праздничная атмосфера. Природа сотворила их, чтобы дарить радость и восхищать. Это свойство цветущих растений люди уже давно используют для украшения праздников.
+                                        a(href="#!").article__link Подробнее 
+                                .article.swiper-slide 
+                                    .article__img 
+                                        img(src="@img/product-6.png", alt="" draggable="false")
+                                    .article__content 
+                                        p.article__title Выбираем цветы на выпускной
+                                        p.article__p Букет должен быть таким, чтобы выпускник нес его в школу с гордостью и вручая, увидел в глазах учителя умиление. Цветы на выпускной должны вписываться в общую атмосферу праздника и гармонично смотреться в руках ученика. В связи с этим вопрос, а какие цветы и какие композиции подойдут для выпускного?
+                                        a(href="#!").article__link Подробнее 
+                        .articles__footer 
+                            .articles__navigation 
+                                .swiper-button-prev
+                                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M6 12.1328L7.05 11.0828L2.85 6.88281L12 6.88281L12 5.38281L2.85 5.38281L7.05 1.18281L6 0.132812L-1.47821e-06 6.13281L6 12.1328Z" fill="#3E0B3D"/>
+                                    </svg>
+                                .swiper-button-next
+                                    <svg width="12" height="13" viewBox="0 0 12 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M6 0.132812L4.95 1.18281L9.15 5.38281H0V6.88281H9.15L4.95 11.0828L6 12.1328L12 6.13281L6 0.132812Z" fill="#3E0B3D"/>
+                                    </svg>
         script(src="js/app.min.js") 

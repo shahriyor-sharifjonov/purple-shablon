@@ -2,10 +2,9 @@ import * as functions from "./modules/functions.js";
 
 functions.isWebp();
 
-// import Swiper, { Navigation, Pagination } from 'swiper';
+import Swiper, { Navigation, Pagination } from 'swiper';
 
-// const swiper = new Swiper();
-
+const swiper = new Swiper();
 
 const headerButton = document.querySelector(".header__button");
 const headerMenu = document.querySelector(".header__menu");
@@ -35,3 +34,22 @@ headerLink.forEach(el => {
         menuOpened ? menuToggle() : ''
     })
 })
+
+new Swiper(".articles__swiper", {
+    slidesPerView: 1,
+    spaceBetween: 15,
+    grabCursor: true,
+    modules: [Navigation],
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev"
+    },
+    breakpoints: {
+        576: {
+            slidesPerView: 2,
+        },
+        768: {
+            slidesPerView: 3,
+        }
+    }
+});
